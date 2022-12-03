@@ -1,4 +1,4 @@
-.grid-container {
+#grid-container {
   display: flex;
   flex-direction: column;
 }
@@ -10,4 +10,8 @@
 .grid-column {
   width: 20px;
   height: 20px;
+}
+
+.grid-hover {
+  background-color: black;
 }

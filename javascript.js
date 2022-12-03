@@ -1,6 +1,6 @@
 // Create a 16x16 grid of square divs
 
-const gridContainer = document.querySelector('.grid-container');
+const gridContainer = document.querySelector('#grid-container');
 
 for (let i = 1; i <= 16; i++) {
   const gridRow = document.createElement('div');
@@ -14,3 +14,18 @@ for (let i = 1; i <= 16; i++) {
     gridRow.appendChild(gridColumn);
   }
 }
+
+const hoverSquares = document.querySelectorAll('.grid-column');
+
+hoverSquares.forEach(square => {
+  square.addEventListener('mouseover', () => {
+    square.classList.add('grid-hover');
+  });
+  
+  square.addEventListener('mouseout', () => {
+    square.classList.remove('grid-hover');
+  });
+  
+});
+
+
