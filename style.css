@@ -5,10 +5,9 @@
 
 .grid-row {
   display: flex;
-  flex: 1;
 }
 
 .grid-column {
-  flex: 1;
-
+  width: 20px;
+  height: 20px;
 }
