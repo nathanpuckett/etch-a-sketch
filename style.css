@@ -1,15 +1,18 @@
 #grid-container {
   display: flex;
   flex-direction: column;
+  width: 750px;
+  height: 750px;
+  border: 1px solid black;
 }
 
 .grid-row {
   display: flex;
+  flex: 1;
 }
 
 .grid-column {
-  width: 20px;
-  height: 20px;
+  flex: 1;
 }
 
 .grid-hover {
