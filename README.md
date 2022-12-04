@@ -2,4 +2,5 @@
 Etch-a-Sketch Project for TOP
 https://nathanpuckett.github.io/etch-a-sketch/
 
-# write a brief introduction describing what the current project is and what skills you will have demonstrated once you have completed it. (You can also do this as a self-reflection at the end of the project, which is a good way to review what you have learned.)
+This project is an Etch-a-Sketch simulator that demonstrates DOM manipulation, event handling, & flexbox. Enjoy!
+- Nathan Puckett

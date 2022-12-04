@@ -21,13 +21,15 @@ function hover() {
     square.addEventListener('mouseover', () => {
       square.classList.add('grid-hover');
     });
+    /*
     square.addEventListener('mouseout', () => {
       square.classList.remove('grid-hover');
     });
+    */
   });
 };
 
-createGrid(16);
+createGrid(100);
 hover();
 
 function clearGrid() {
@@ -39,15 +41,11 @@ function clearGrid() {
 const resetButton = document.querySelector('#reset');
 resetButton.addEventListener('click', () => {
   clearGrid();
-  const resolution = prompt('number of squares per side?');
-  if (resolution <= 100) {
+  const resolution = prompt('How many squares per side? (Max: 100)');
+  if (resolution <= 100 && resolution > 0) {
     createGrid(resolution);
   } else {
-    createGrid(16);
+    createGrid(100);
   }
   hover();
 });
-
-
-
-
